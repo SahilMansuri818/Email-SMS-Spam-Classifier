@@ -7,17 +7,17 @@ os.makedirs(nltk_data_dir, exist_ok=True)
 nltk.data.path.append(nltk_data_dir)
 
 try:
-    nltk.data.find('tokenizers/punkt')
+    nltk.data.find('punkt')
 except LookupError:
     nltk.download('punkt', download_dir=nltk_data_dir)
 
 try:
-    nltk.data.find('corpora/stopwords')
+    nltk.data.find('stopwords')
 except LookupError:
     nltk.download('stopwords', download_dir=nltk_data_dir)
 
 try:
-    nltk.data.find('tokenizers/punkt_tab')
+    nltk.data.find('punkt_tab')
 except LookupError:
     nltk.download('punkt_tab', download_dir=nltk_data_dir)
 
